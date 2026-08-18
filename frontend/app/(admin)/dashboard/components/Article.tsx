@@ -79,7 +79,7 @@ const Article = () => {
                     {posts.map((post) => (
                         <div key={post.ID} className="bg-surface border border-outline-variant p-stack-md rounded-lg flex flex-col sm:flex-row items-start sm:items-center justify-between gap-stack-md hover:bg-surface-container-low transition-colors duration-200">
                             <div className="flex items-center gap-stack-md flex-1">
-                                <div className="w-16 h-16 rounded bg-surface-variant flex-shrink-0 overflow-hidden">
+                                <div className="w-16 h-16 rounded bg-surface-variant shrink-0 overflow-hidden">
                                     {post.cover_image ? (
                                         <img
                                             className="w-full h-full object-cover"

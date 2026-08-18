@@ -1,26 +1,118 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  /* Colors */
+  --color-primary-container: #131b2e;
+  --color-background: #f8f9ff;
+  --color-surface-tint: #565e74;
+  --color-inverse-on-surface: #eaf1ff;
+  --color-primary-fixed: #dae2fd;
+  --color-secondary: #006a61;
+  --color-on-surface-variant: #45464d;
+  --color-secondary-container: #86f2e4;
+  --color-inverse-surface: #213145;
+  --color-on-surface: #0b1c30;
+  --color-on-secondary: #ffffff;
+  --color-outline: #76777d;
+  --color-primary: #000000;
+  --color-surface-dim: #cbdbf5;
+  --color-on-error-container: #93000a;
+  --color-on-secondary-fixed: #00201d;
+  --color-error: #ba1a1a;
+  --color-surface: #f8f9ff;
+  --color-on-primary: #ffffff;
+  --color-tertiary-fixed-dim: #dec29a;
+  --color-tertiary: #000000;
+  --color-secondary-fixed-dim: #6bd8cb;
+  --color-primary-fixed-dim: #bec6e0;
+  --color-on-primary-container: #7c839b;
+  --color-on-secondary-fixed-variant: #005049;
+  --color-tertiary-fixed: #fcdeb5;
+  --color-surface-variant: #d3e4fe;
+  --color-on-tertiary-container: #98805d;
+  --color-surface-container-lowest: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-primary-fixed: #131b2e;
+  --color-on-primary-fixed-variant: #3f465c;
+  --color-on-tertiary-fixed-variant: #574425;
+  --color-inverse-primary: #bec6e0;
+  --color-surface-container-high: #dce9ff;
+  --color-outline-variant: #c6c6cd;
+  --color-on-tertiary: #ffffff;
+  --color-surface-container: #e5eeff;
+  --color-on-background: #0b1c30;
+  --color-on-tertiary-fixed: #271901;
+  --color-surface-container-low: #eff4ff;
+  --color-on-error: #ffffff;
+  --color-secondary-fixed: #89f5e7;
+  --color-on-secondary-container: #006f66;
+  --color-surface-container-highest: #d3e4fe;
+  --color-tertiary-container: #271901;
+  --color-surface-bright: #f8f9ff;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* Border Radius */
+  --radius-DEFAULT: 0.125rem;
+  --radius-lg: 0.25rem;
+  --radius-xl: 0.5rem;
+  --radius-full: 0.75rem;
+
+  /* Spacing */
+  --spacing-max-content-width: 720px;
+  --spacing-section-gap: 128px;
+  --spacing-stack-md: 16px;
+  --spacing-stack-xs: 4px;
+  --spacing-stack-xl: 64px;
+  --spacing-stack-sm: 8px;
+  --spacing-stack-lg: 32px;
+
+  /* Font Families */
+  --font-display: var(--font-newsreader), serif;
+  --font-body-lg: var(--font-inter), sans-serif;
+  --font-caption: var(--font-inter), sans-serif;
+  --font-label-caps: var(--font-inter), sans-serif;
+  --font-display-mobile: var(--font-newsreader), serif;
+  --font-headline-md: var(--font-newsreader), serif;
+  --font-body-md: var(--font-inter), sans-serif;
+  --font-headline-lg: var(--font-newsreader), serif;
+
+  /* Font Sizes */
+  --text-display: 48px;
+  --text-display--line-height: 1.1;
+  --text-display--letter-spacing: -0.02em;
+  --text-display--font-weight: 600;
+
+  --text-body-lg: 20px;
+  --text-body-lg--line-height: 1.7;
+  --text-body-lg--font-weight: 400;
+
+  --text-caption: 14px;
+  --text-caption--line-height: 1.5;
+  --text-caption--font-weight: 400;
+
+  --text-label-caps: 12px;
+  --text-label-caps--line-height: 1;
+  --text-label-caps--letter-spacing: 0.1em;
+  --text-label-caps--font-weight: 600;
+
+  --text-display-mobile: 36px;
+  --text-display-mobile--line-height: 1.2;
+  --text-display-mobile--letter-spacing: -0.01em;
+  --text-display-mobile--font-weight: 600;
+
+  --text-headline-md: 24px;
+  --text-headline-md--line-height: 1.4;
+  --text-headline-md--font-weight: 500;
+
+  --text-body-md: 16px;
+  --text-body-md--line-height: 1.6;
+  --text-body-md--font-weight: 400;
+
+  --text-headline-lg: 32px;
+  --text-headline-lg--line-height: 1.3;
+  --text-headline-lg--font-weight: 500;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-background);
+  color: var(--color-on-surface);
 }

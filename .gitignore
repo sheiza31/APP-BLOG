@@ -39,3 +39,16 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# root-level duplicates (actual code lives in frontend/)
+/app/
+/public/
+/package.json
+/package-lock.json
+/eslint.config.mjs
+/next.config.ts
+/postcss.config.mjs
+/tsconfig.json
+/AGENTS.md
+/CLAUDE.md
+/README.md
